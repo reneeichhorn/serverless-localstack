@@ -143,6 +143,8 @@ class LocalstackPlugin {
       }
     }
 
+    this.debug(`Intercepting: ${method}`);
+    console.log(service, method, params);
     return this.awsProviderRequest(service, method, params);
 
   }
